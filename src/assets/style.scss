@@ -1,0 +1,121 @@
+@use "./animations.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+canvas#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Page transition animation */
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.4s ease;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInSlide 0.8s ease forwards;
+}
+
+/* === Text Enhancements === */
+.gradient-text {
+  background: linear-gradient(90deg, #ffcc00, #ff00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.shadowed-text {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.stroked-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.cta:hover {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* === Reveal Animation === */
+.reveal-text span {
+  opacity: 0;
+  transform: translateY(15px);
+  display: inline-block;
+  animation: fadeLetter 0.6s forwards;
+}
+.reveal-text span:nth-child(n) {
+  animation-delay: calc(0.05s * var(--i));
+}
+@keyframes fadeLetter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.matrix-bg {
+  background: black url('/matrix-bg.gif') repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.75rem;
+  color: #00ff66;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 1.2rem;
+}
+.typing-line {
+  white-space: pre-wrap;
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.typing-line, .navbar, .nav-links, main, section {
+  position: relative;
+  z-index: 2;
+}

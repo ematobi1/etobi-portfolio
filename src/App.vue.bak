@@ -1,0 +1,49 @@
+<template>
+  <canvas id="matrix"></canvas>
+  <div class="app">
+    <nav class="navbar vertical">
+      <img src="/TLOGO.jpg" alt="Etobi Logo" class="logo" />
+      <div class="links">
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/projects">Projects</router-link>
+        <router-link to="/blog">Blog</router-link>
+        <router-link to="/contact">Contact</router-link>
+      </div>
+    </nav>
+
+    <transition name="fade-slide" mode="out-in">
+      <router-view />
+    </transition>
+  </div>
+</template>
+
+<script setup>
+import './assets/rainbowMatrix'
+</script>
+
+<style scoped>
+.navbar.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+</style>

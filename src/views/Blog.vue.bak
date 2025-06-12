@@ -1,0 +1,33 @@
+<template>
+  <section class="blog-page">
+    <h2>Latest Posts</h2>
+    <p class="lead">Thoughts, tutorials, and discoveries from the trenches of full-stack development.</p>
+    <div class="grid">
+      <BlogCard v-for="(post, i) in posts" :key="i" :post="post" />
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import BlogCard from '../components/BlogCard.vue'
+import { blogPosts, fetchPosts } from '../composables/useBlog'
+
+fetchPosts()
+const posts = blogPosts
+</script>
+
+<style scoped>
+.blog-page {
+  padding: 2rem;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.lead {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #aaa;
+}
+</style>
