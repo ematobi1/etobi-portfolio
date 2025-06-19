@@ -8,23 +8,35 @@ import MatrixCanvas from '@/components/MatrixCanvas.vue'
 import TypingMatrix from '@/components/TypingMatrix.vue'
 
 const lines = [
-  "��� About",
-  "Driven by a passion for transforming complex challenges into user-centric web applications.",
-  "I specialize in building scalable solutions with modern frameworks like React and Node.js.",
+  "👨🏽‍💻 About",
+  "The Developer Who Thinks Like a Designer,",
+  "Codes Like an Engineer, and Moves Like a Founder",
   "",
-  "Key Achievements:",
-  "• Led cross-functional teams to deliver CRM tools that boosted client productivity by 20%.",
-  "• Optimized codebases, reducing load times by 30% and improving user retention.",
-  "• Mentored junior devs in system design and clean code practices.",
+  "My journey as a full-stack developer has been",
+  "guided by one core belief: build with the end in mind.",
+  "From the way a button responds to a tap,",
+  "to how a database handles a million queries —",
+  "I obsess over every layer of the experience.",
   "",
-  "Skills:",
-  "Front-End: HTML5, CSS3, JavaScript, React.js, Redux.js, Vue.js, Angular, Responsive Design",
-  "Back-End: Node.js, Python, RESTful APIs, GraphQL, Express.js, Django, Flask",
-  "Databases: MySQL, PostgreSQL, MongoDB, Redis",
-  "DevOps/Cloud: AWS, Docker, Kubernetes, Jenkins, CI/CD, Terraform",
-  "Tools/Methods: Git, Agile/Scrum, Jira, Webpack, Jest"
+  "I love working at the edge of possibility —",
+  "where logic meets emotion, and data drives intuition.",
+  "I approach software not as code, but as craft —",
+  "something that should solve real problems while",
+  "feeling frictionless to the user.",
+  "",
+  "I’ve worn many hats: solo builder, collaborator,",
+  "tech lead, problem solver. In every role, I’ve brought",
+  "curiosity, calmness under pressure, and a mindset",
+  "that sees systems, not silos.",
+  "",
+  "I believe in:",
+  "• Writing code people can read",
+  "• Designing flows people can feel",
+  "• Building products people will remember"
 ]
 </script>
+
+
 
 <style scoped>
 .typing-line {

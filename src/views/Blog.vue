@@ -8,12 +8,25 @@ import MatrixCanvas from '@/components/MatrixCanvas.vue'
 import TypingMatrix from '@/components/TypingMatrix.vue'
 
 const lines = [
-  "��� Blog",
-  "WebSocket Dashboards + Firestore Sync",
-  "Stem Separation with WhisperX + FastAPI",
-  "DJ Mixer ML: Design & JavaScript"
+  "✍🏽 Blog",
+  "Thinking Aloud – Notes from the Code Frontier",
+  "Sometimes the most valuable code we write never",
+  "makes it to production — it lives in the lessons",
+  "we carry forward. My blog is where I unpack those",
+  "moments: Breakthroughs, setbacks, systems, soft",
+  "skills, and the subtle art of building with intent.",
+  "Recent insights:",
+  "“Beyond Code: Why Great Developers Think",
+  "Like Architects”",
+  "“The Admin Panel as Product: Designing",
+  "Control with Confidence”",
+  "“Side Projects, Sharp Skills: My Personal R&D Lab”",
+  "These aren’t just thoughts — they’re windows",
+  "into how I work, think, and grow."
 ]
 </script>
+
+
 
 <style scoped>
 .typing-line {

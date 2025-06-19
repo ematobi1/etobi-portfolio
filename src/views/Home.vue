@@ -8,19 +8,30 @@ import TypingMatrix from '@/components/TypingMatrix.vue'
 import MatrixCanvas from '@/components/MatrixCanvas.vue'
 
 const lines = [
-  "í¿  Home",
-  "í±‹ Hi, Iâ€™m E Tobi â€“ Fullâ€‘Stack Developer",
-  "Building scalable web platforms and AIâ€‘powered audio tools.",
-  "í·© I turn complex problems into polished production solutions."
+  "ğŸ  Home",
+  "Welcome to Tobiâ€™s Portfolio",
+  "Where code meets clarity, and innovation meets intention.",
+  "Hi, Iâ€™m Emmanuel Tobi â€” a full-stack developer who doesnâ€™t just",
+  "build features, but engineers solutions that move the needle.",
+  "My work lives at the intersection of clean design, intuitive",
+  "experiences, and robust systems that scale.",
+  "Whether crafting seamless user interfaces or shaping the backend",
+  "logic that powers complex products, I bring both imagination",
+  "and precision to the table.",
+  "If you believe software should not only function but feel right,",
+  "youâ€™re in the right place.",
+  "Letâ€™s explore whatâ€™s possible â€” and build things that matter."
 ]
 </script>
+
+
 
 <style scoped>
 .typing-line {
 
   color: #00ffff;
 
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 
   text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
 
