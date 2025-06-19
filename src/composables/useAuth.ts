@@ -4,9 +4,9 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
-  onAuthStateChanged,
-  User
+  onAuthStateChanged
 } from 'firebase/auth'
+import type { User } from 'firebase/auth'
 
 const user = ref<User | null>(null)
 
