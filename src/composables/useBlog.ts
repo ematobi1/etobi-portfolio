@@ -1,8 +1,7 @@
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import {
   collection,
   getDocs,
-  getDoc,
   doc,
   addDoc,
   updateDoc,
