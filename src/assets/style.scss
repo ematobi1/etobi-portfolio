@@ -88,8 +88,7 @@ canvas#matrix {
 }
 
 .matrix-bg {
-  background: black url('/matrix-bg.gif') repeat;
-  background-size: cover;
+  background: black;
   min-height: 100vh;
   padding: 2rem;
   font-family: 'Press Start 2P', monospace;

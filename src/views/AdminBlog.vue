@@ -1,5 +1,5 @@
 <template>
-  <div v-if="auth.user" class="admin-blog">
+  <div v-if="user" class="admin-blog">
     <h2>Manage Blog Posts</h2>
     <form @submit.prevent="submitPost">
       <input v-model="form.title" placeholder="Post title" required />
@@ -11,7 +11,7 @@
   </div>
   <div v-else class="login-required">
     <h2>Please sign in to edit blog posts.</h2>
-    <button @click="auth.loginWithGoogle()">Login with Google</button>
+    <button @click="loginWithGoogle()">Login with Google</button>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../firebase/firebase'
 import { useAuth } from '../composables/useAuth'
 
-const auth = useAuth()
+const { user, loginWithGoogle } = useAuth()
 
 const form = ref({
   title: '',

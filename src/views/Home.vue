@@ -5,7 +5,7 @@
         v-for="(line, index) in lines"
         :key="index"
         :class="['fade-line', line.class]"
-        :style="{ animationDelay: (index * 0.3) + 's' }"   GOOD
+        :style="{ animationDelay: (index * 0.3) + 's' }"
 
         v-html="line.text"
       />
